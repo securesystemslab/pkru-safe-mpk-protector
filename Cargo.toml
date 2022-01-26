@@ -1,0 +1,25 @@
+[package]
+name = "mpk_protector"
+version = "0.1.0"
+authors = ["Paul Kirth <pk1574@gmail.com>"]
+
+[lib]
+crate-type = [ "dylib" ]
+plugin = true
+
+
+[dependencies]
+syn = "0.15"
+quote = "0.6"
+mpk = { git = "https://github.com/securesystemslab/pkru-safe-mpk-libc.git" }
+itertools = "0.7.3"
+
+[dev-dependencies]
+untrusted = { path = "tests/untrusted" }
+pkmallocator = { git = "https://github.com/securesystemslab/pkru-safe-pkmallocator.git" }
+pkalloc = { git = "https://github.com/securesystemslab/pkru-safe-pkalloc.git" }
+libc = "0.2.5"
+
+[profile.test]
+lto = true
+incremental = false

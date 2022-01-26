@@ -1,0 +1,21 @@
+[package]
+name = "untrusted"
+version = "0.1.0"
+authors = ["Paul Kirth <pk1574@gmail.com>"]
+build = "build.rs"
+links = "untrusted"
+
+[lib]
+name = "untrusted"
+path = "src/untrusted.rs"
+test = false
+doc = false
+
+[build-dependencies]
+cc = "1.0.1"
+log ="0.4.1"
+
+[dependencies]
+mpk_protector = { path = "../../" }
+pkmallocator = { git = "https://github.com/securesystemslab/pkru-safe-pkmallocator.git" }
+mpk = { git = "https://github.com/securesystemslab/pkru-safe-mpk-libc.git" }
