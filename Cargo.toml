@@ -16,7 +16,7 @@ itertools = "0.7.3"
 
 [dev-dependencies]
 untrusted = { path = "tests/untrusted" }
-pkmallocator = { git = "https://github.com/securesystemslab/pkru-safe-pkmallocator.git" }
+pkmallocator = { git = "https://github.com/securesystemslab/pkru-safe-pkmallocator.git", branch = "no-mpk" }
 pkalloc = { git = "https://github.com/securesystemslab/pkru-safe-pkalloc.git" }
 libc = "0.2.5"
 

@@ -17,5 +17,5 @@ log ="0.4.1"
 
 [dependencies]
 mpk_protector = { path = "../../" }
-pkmallocator = { git = "https://github.com/securesystemslab/pkru-safe-pkmallocator.git" }
+pkmallocator = { git = "https://github.com/securesystemslab/pkru-safe-pkmallocator.git", branch = "no-mpk" }
 mpk = { git = "https://github.com/securesystemslab/pkru-safe-mpk-libc.git" }
